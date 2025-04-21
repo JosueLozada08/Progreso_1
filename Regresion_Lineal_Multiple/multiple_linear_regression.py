@@ -18,8 +18,8 @@ dataset = pd.read_csv('50_Startups.csv')
 # Separar las variables independientes (X) de la variable dependiente (y).
 # X: Todas las columnas excepto la última (características).
 # y: La última columna (beneficios).
-X = dataset.iloc[:, :-1].values  # Características
-y = dataset.iloc[:, -1].values   # Beneficios
+X = dataset.iloc[:, :-1].values  # Características   [fila, columna]  (: = todas las filas)
+y = dataset.iloc[:, -1].values   # Beneficios    [fila, columna]  (: = todas las filas)
 print("Datos originales (X):\n", X)
 
 # 2. Codificación de datos categóricos

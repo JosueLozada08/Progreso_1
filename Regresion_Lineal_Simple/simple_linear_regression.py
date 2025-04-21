@@ -16,8 +16,8 @@ import pandas as pd  # Para manipulación y análisis de datos
 # Importar el dataset
 # Asegúrate de que 'Salary_Data.csv' esté en el mismo directorio o proporciona la ruta completa.
 dataset = pd.read_csv('Salary_Data.csv')
-X = dataset.iloc[:, :-1].values  # Variable independiente (años de experiencia)
-y = dataset.iloc[:, -1].values  # Variable dependiente (salario)
+X = dataset.iloc[:, :-1].values  # Variable independiente (años de experiencia)  [fila, columna]  (: = todas las filas)
+y = dataset.iloc[:, -1].values  # Variable dependiente (salario)   [fila, columna]  (: = todas las filas)
 
 # Dividir el dataset en conjunto de entrenamiento y conjunto de prueba
 from sklearn.model_selection import train_test_split
